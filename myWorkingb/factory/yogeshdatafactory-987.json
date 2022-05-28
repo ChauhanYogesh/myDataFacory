@@ -1,0 +1,9 @@
+{
+	"name": "yogeshdatafactory-987",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4ab9b593-2699-4d46-aa5c-62a7b142e72d",
+		"tenantId": "3617ef9b-98b4-40d9-ba43-e1ed6709cf0d"
+	}
+}
