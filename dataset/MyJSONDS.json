@@ -1,0 +1,46 @@
+{
+	"name": "MyJSONDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Customer.json",
+				"container": "mycontianer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"first_name": {
+					"type": "string"
+				},
+				"last_name": {
+					"type": "string"
+				},
+				"address": {
+					"type": "object",
+					"properties": {
+						"street": {
+							"type": "string"
+						},
+						"city": {
+							"type": "string"
+						},
+						"state": {
+							"type": "string"
+						},
+						"zip": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
+}
